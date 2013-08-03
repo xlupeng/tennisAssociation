@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>添加比赛</title>
+		<meta http-equiv="Content-Type" content="text/html;" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+	</head>
+	<body>
+
+	<input id = "name_player_a" type = "text">
+	<input id = "rate_player_a" type = "text">
+	<input id = "name_player_b" type = "text">
+	<input id = "rate_player_b" type = "text">
+	<input type="button" onclick = "add_game()" value="添加比赛">
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery.js">
+
+	</script>
+	<script src="js/bootstrap.min.js">
+		function add_game () {
+			var name_player_a = document.getElementById("name_player_a")
+			var rate_player_a = document.getElementById("rate_player_a")
+			var name_player_b = document.getElementById("name_player_b")
+			var rate_player_b = document.getElementById("rate_player_b")
+			document.write("选手A：" + name_player_a.value + " 赔率：" + rate_player_a.value + "\n选手B：" +name_player_b.value + " 赔率：" + rate_player_b.value)
+		}
+	</script>
+
+	</body>
+</html>
